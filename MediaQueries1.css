@@ -1,0 +1,36 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+ .container{
+    width: 100%;
+    display: flex;
+    color: #fff;
+}
+.container > div{
+    flex: 1;
+    background-color: blueviolet;
+    height: 200px;
+    margin-right: 3px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+}
+.container > div > h1,p{
+    text-align: justify;
+}
+@media screen and (max-width:540px) {
+    .container{
+        width: 100%;
+       display: block;
+    }
+    .container > div {
+        width: 100%;
+        height: 120px;
+        margin-bottom: 4px;
+    }
+  
+} 
